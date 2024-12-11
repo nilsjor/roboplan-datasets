@@ -4,6 +4,34 @@
 
 This repository contains a unique dataset collected using a 5G-enabled TurtleBot in the MMK corridor at KTH. The project leverages edge computing capabilities provided by Telenor in collaboration with the [TECoSA Research Center](https://www.tecosa.center.kth.se/). TECoSA focuses on Trustworthy Edge Computing Systems and Applications—find more at the link above.
 
+## How to Use This Repository
+
+This repository uses **Git Large File Storage (LFS)** for managing large files, including the Parquet dataset. To access the dataset:
+
+1. Install Git LFS on your machine:
+
+    Check the [Git LFS GitHub page](https://github.com/git-lfs/git-lfs?tab=readme-ov-file#installing) for the installation instructions for your system.
+
+2. Initialize Git LFS:
+
+    ```
+    git lfs install
+    ```
+
+3. Clone this repository:
+
+    ```
+    git clone https://github.com/nilsjor/roboplan-datasets.git
+    ```
+
+4. Ensure the large files are downloaded:
+
+    ```
+    git lfs pull
+    ```
+
+If you encounter any issues or see placeholder files instead of the actual data, ensure Git LFS is installed and initialized before cloning the repository.
+
 ## Dataset Overview
 
 - **Environment:** MMK corridor, KTH Royal Institute of Technology.
